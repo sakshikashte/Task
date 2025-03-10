@@ -35,6 +35,7 @@ const Orderscreen = () => {
   return (
     <>
       <div className="container">
+      {/* <button onClick={()=>navigate("kml")}>Kml file</button> */}
         <h2 style={{ textAlign: "center" }}> Order Management</h2>
         <div className="search-bar">
           <input
@@ -44,6 +45,7 @@ const Orderscreen = () => {
             onChange={(e) => setSearch(e.target.value)}
           />
           <button onClick={() => navigate("/neworder")}>New Order</button>
+          
         </div>
 
         <table>
